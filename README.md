@@ -1,4 +1,4 @@
-# Projeto-Integrador-3-Sem
+# Project Papo de Viagem 
 Repositório para realização do PI, consiste em um sistema de Agencia de viagens construido utilizando HTML, CSS, JavaScript e JAVA 
 
 logo da agencia no canto superior esquerdo em todas as telas
@@ -22,12 +22,20 @@ caixa de texto para inserir nome,data de nascimento, email e senha e cpf, 3 bote
 
 4°  tela: Viagens
 
-varias seçoes com todas as viagens para visualização
+varias seçoes com todas as viagens para visualização/ caso seja Administrador podera cancelar ou editar 
 
 5°  tela: compra
+
+um breve resumo da viagem escolhida pelo usuario, possibilidade de escolha para forma de pagamento, e botão de concluir compra.
+
 6°  tela: detalhes de viagem
+
+exibe detalhes da viagem como: local, data, descrição e preço/ caso seja Administrador podera cancelar ou editar 
+
 7°  tela: suas viagens
-8°  tela: compra finalizada 
-9°  tela: gerenciamento de Perfil
-10° tela: Perfil
-11° tela: 
+
+exibe todas as viagens adquiridas pelo cliente
+
+8°  tela: gerenciamento de Perfil
+
+editar informações do usuario logado
