@@ -39,3 +39,8 @@ exibe todas as viagens adquiridas pelo cliente
 8°  tela: gerenciamento de Perfil
 
 editar informações do usuario logado
+
+Prototipagem:
+
+![imagemHome](Project-Papo-de-Viagem/Src/)
+![imagemHome](src/Page1)
