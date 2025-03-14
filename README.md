@@ -44,3 +44,6 @@ Prototipagem:
 
 ![imagemHome](img/pageDestino.png)
 ![imagemHome](img/page1.png)
+![minhasViagens](img/MinhasViagens.jpg)
+![detalheViagem](img/DetalhesViagem.jpg)
+![compra](img/Compra.jpg)
