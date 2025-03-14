@@ -42,5 +42,5 @@ editar informações do usuario logado
 
 Prototipagem:
 
-![imagemHome](src/pageDestino.png)
-![imagemHome](src/page1.png)
+![imagemHome](img/pageDestino.png)
+![imagemHome](img/page1.png)
