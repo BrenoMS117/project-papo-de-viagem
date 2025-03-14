@@ -43,4 +43,4 @@ editar informações do usuario logado
 Prototipagem:
 
 ![imagemHome](Project-Papo-de-Viagem/Src)
-![imagemHome](src/Page1.png)
+![imagemHome]([src/Page1.png](https://github.com/BrenoMS117/Project-Papo-de-Viagem/blob/main/src/pageDestino.png))
