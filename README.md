@@ -42,5 +42,5 @@ editar informações do usuario logado
 
 Prototipagem:
 
-![imagemHome](Project-Papo-de-Viagem/Src)
+![imagemHome](src/pageDestino.png)
 ![imagemHome](src/page1.png)
