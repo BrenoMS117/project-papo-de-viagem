@@ -44,7 +44,7 @@ Prototipagem:
 
 ![imagemHome](img/pageDestino.png)
 ![imagemHome](img/page1.png)
-!{imagemHome](img/imageLogin.PNG)
+![imagemHome](img/imageLogin.PNG)
 ![imagemHome](img/imageRegistro.PNG)
 ![imagemHome](img/imageAreaLogada.PNG)
 ![imagemHome](img/imageGerenciarPerfil.PNG)
