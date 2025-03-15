@@ -47,3 +47,8 @@ Prototipagem:
 ![minhasViagens](img/MinhasViagens.jpg)
 ![detalheViagem](img/DetalhedeViagem.jpg)
 ![compra](img/Compra.jpg)
+
+Modelo Entidade Relacionamento:
+
+![MER](img/Mer-PapoDeViagem.png)
+
