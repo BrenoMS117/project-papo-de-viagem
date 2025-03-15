@@ -47,7 +47,7 @@ Prototipagem:
 ![imagemHome](img/imageLogin.PNG)
 ![imagemHome](img/imageRegistro.PNG)
 ![imagemHome](img/imageAreaLogada.PNG)
-![imagemHome](img/imageGerenciarPerfil.PNG)
+![imagemHome](img/ImageGerenciarPerfil.PNG)
 ![imagemHome](img/imageGerenciarPerfil-Viagens.PNG)
 ![minhasViagens](img/MinhasViagens.jpg)
 ![detalheViagem](img/DetalhedeViagem.jpg)
