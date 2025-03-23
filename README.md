@@ -42,18 +42,18 @@ editar informações do usuario logado
 
 Prototipagem:
 
-![imagemHome](img/pageDestino.png)
-![imagemHome](img/page1.png)
-![imagemHome](img/imageLogin.PNG)
-![imagemHome](img/imageRegistrar.PNG)
-![imagemHome](img/imageAreaLogada.PNG)
-![imagemHome](img/ImageGerenciarPerfil.PNG)
-![imagemHome](img/imageGerenciarPerfil-Viagens.PNG)
-![minhasViagens](img/MinhasViagens.jpg)
-![detalheViagem](img/DetalhedeViagem.jpg)
-![compra](img/Compra.jpg)
+![imagemHome](src/Prototipagem/page1.png)
+![imagemHome](src/Prototipagem/imageAreaLogada.PNG)
+![imagemDestino](src/Prototipagem/pageDestino.png)
+![imagemRegistrar](src/Prototipagem/imageRegistrar.PNG)
+![imagemLogin](src/Prototipagem/imageLogin.PNG)
+![imagemGerenciarPerfil](src/Prototipagem/ImageGerenciarPerfil.PNG)
+![imagemGerenciarViagens](src/Prototipagem/imageGerenciarPerfil-Viagens.PNG)
+![minhasViagens](src/Prototipagem/DetalhedeViagem.jpg)
+![detalheViagem](src/Prototipagem/MinhasViagens.jpg)
+![compra](src/Prototipagem/Compra.jpg)
 
 Modelo Entidade Relacionamento:
 
-![MER](img/Mer-PapoDeViagem.png)
+![MER](src/modelo%20MER/Mer-PapoDeViagem.png)
 
