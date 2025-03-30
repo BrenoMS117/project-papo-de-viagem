@@ -55,5 +55,5 @@ Prototipagem:
 
 Modelo Entidade Relacionamento:
 
-![MER](src/modelo%20MER/Mer-PapoDeViagem.png)
+![MER](src/Prototipagem/Mer-PapoDeViagem.png)
 
