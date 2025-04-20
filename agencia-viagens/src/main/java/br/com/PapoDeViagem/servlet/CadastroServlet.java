@@ -1,7 +1,7 @@
 package br.com.PapoDeViagem.servlet;
 
-import br.com.PapoDeViagem.dao.Viagemdao;
-import br.com.PapoDeViagem.model.Cadastro;
+import br.com.PapoDeViagem.dao.UsuarioDao;
+import br.com.PapoDeViagem.model.Usuario;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/cadastro")
-public class CreateCadastroServlet extends HttpServlet {
+public class CadastroServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -23,16 +23,16 @@ public class CreateCadastroServlet extends HttpServlet {
         String cpf = request.getParameter("cpf");
         boolean adm = Boolean.parseBoolean(request.getParameter("adm"));
 
-        Cadastro cadastro = new Cadastro();
-        cadastro.setNome(nome);
-        cadastro.setEmail(email);
-        cadastro.setSenha(senha);
-        cadastro.setData_nascimento(data_nascimento);
-        cadastro.setCpf(cpf);
-        cadastro.setAdm(adm);
+        Usuario usuario = new Usuario();
+        usuario.setNome(nome);
+        usuario.setEmail(email);
+        usuario.setSenha(senha);
+        usuario.setData_nascimento(data_nascimento);
+        usuario.setCpf(cpf);
+        usuario.setAdm(adm);
 
-        Viagemdao dao = new Viagemdao();
-        dao.criarUsuario(cadastro);
+        UsuarioDao dao = new UsuarioDao();
+        dao.criarUsuario(usuario);
 
         request.getRequestDispatcher("index.html").forward(request, response);
     }
