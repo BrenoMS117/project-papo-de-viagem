@@ -4,6 +4,9 @@ public class Cadastro {
     private String nome;
     private String email;
     private String senha;
+    private String data_nascimento;
+    private String cpf;
+    private boolean adm;
 
     public String getNome(){
         return nome;
@@ -17,6 +20,16 @@ public class Cadastro {
         return senha;
     }
 
+    public String getData_nascimento(){
+        return data_nascimento;
+    }
+
+    public String getCpf(){
+        return cpf;
+    }
+
+    public boolean getAdm() { return adm; }
+
     public void setNome(String nome){
         this.nome = nome;
     }
@@ -28,4 +41,15 @@ public class Cadastro {
     public void setSenha(String senha){
         this.senha = senha;
     }
+
+    public void setData_nascimento(String data_nascimento){
+        this.data_nascimento = data_nascimento;
+    }
+
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }
+
+    public void setAdm(boolean adm) { this.adm = adm; }
+
 }
