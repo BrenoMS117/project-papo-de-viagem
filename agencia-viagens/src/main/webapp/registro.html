@@ -19,14 +19,13 @@
             <h1>CRIE SUA CONTA E COMECE SUA AVENTURA!!!</h1>
             <div class="container">
             <div class="formulario">
-                <form>
-                    <input type="text" class="campo-menor" placeholder="Primeiro Nome">
-                    <input type="text" class="campo-menor" placeholder="Sobrenome">
-                    <input type="email" class="Email" placeholder="Email">
-                    <input type="text" class="usuario" placeholder="Nome de usuário">
+                <form action="/cadastro" method="post">
+                    <input type="text" class="campo-menor" placeholder="Primeiro Nome" name="nome" id="nome" required>
+                    <input type="email" class="Email" placeholder="Email"  name="email" id="email" required>
+                    <input type="text" class="senha" placeholder="Data de Nascimento" name="data_nascimento" id="data_nascimento" required>
+                    <input type="text" class="usuario" placeholder="CPF" name="cpf" id="cpf" required>
+                    <input type="password" class="senha" placeholder="Senha" name="senha" id="senha" required>
                     <small class="minimo">Mínimo 8 caracteres</small>
-                    <input type="password" class="senha" placeholder="Senha">
-                    <input type="password" class="senha" placeholder="Confirmar Senha">
                     <button class="Registrar">Criar Conta e Comece a Planejar</button>
                 </form>
             </div>

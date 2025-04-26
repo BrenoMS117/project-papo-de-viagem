@@ -33,6 +33,6 @@ public class CadastroServlet extends HttpServlet {
         UsuarioDao dao = new UsuarioDao();
         dao.criarUsuario(usuario);
 
-        request.getRequestDispatcher("index.html").forward(request, response);
+//        request.getRequestDispatcher("index.html").forward(request, response);
     }
 }
