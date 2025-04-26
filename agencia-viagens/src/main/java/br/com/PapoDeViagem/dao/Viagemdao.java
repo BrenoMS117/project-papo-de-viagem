@@ -1,7 +1,7 @@
 package br.com.PapoDeViagem.dao;
 
 import br.com.PapoDeViagem.model.Viagem;
-import br.com.PapoDeViagem.model.Cadastro;
+// import br.com.PapoDeViagem.model.Cadastro;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

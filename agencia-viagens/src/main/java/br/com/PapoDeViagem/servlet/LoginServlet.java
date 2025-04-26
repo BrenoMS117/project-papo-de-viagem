@@ -1,6 +1,7 @@
 package br.com.PapoDeViagem.servlet;
 
 import br.com.PapoDeViagem.dao.UsuarioDao;
+import br.com.PapoDeViagem.model.Login;
 import br.com.PapoDeViagem.model.Usuario;
 
 import javax.servlet.ServletException;
@@ -16,7 +17,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        req.getRequestDispatcher("login.jsp").forward(req, resp);
+//        req.getRequestDispatcher("login.jsp").forward(req, resp);
     }
 
     @Override
@@ -24,18 +25,14 @@ public class LoginServlet extends HttpServlet {
         String email = req.getParameter("email");
         String senha = req.getParameter("senha");
 
-//       Usuario usuario = new Usuario(email, senha);
+        Login login = new Login(email, senha);
+        boolean valido = new UsuarioDao().login(login);
 
-//       boolean valido = new UsuarioDao().login(usuario);
 
-//       if(valido) {
-//           req.getSession().setAttribute("logged", email);
-//
-//           resp.sendRedirect("/home");
-//       } else {
-//           req.setAttribute("mensagem", "Dados Invalidos");
-//
-//           req.getRequestDispatcher("login.jsp").forward(req, resp);
-//       }
+        if (valido) {
+            resp.sendRedirect("registro.html");
+        } else {
+//            req.getRequestDispatcher("login.jsp").forward(req, resp);
+        }
     }
 }

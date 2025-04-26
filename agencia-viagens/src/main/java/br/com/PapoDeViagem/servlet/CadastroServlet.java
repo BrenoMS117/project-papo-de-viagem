@@ -21,7 +21,6 @@ public class CadastroServlet extends HttpServlet {
         String senha = request.getParameter("senha");
         String data_nascimento = request.getParameter("data_nascimento");
         String cpf = request.getParameter("cpf");
-        boolean adm = Boolean.parseBoolean(request.getParameter("adm"));
 
         Usuario usuario = new Usuario();
         usuario.setNome(nome);
@@ -29,7 +28,7 @@ public class CadastroServlet extends HttpServlet {
         usuario.setSenha(senha);
         usuario.setData_nascimento(data_nascimento);
         usuario.setCpf(cpf);
-        usuario.setAdm(adm);
+        usuario.setAdm(false);
 
         UsuarioDao dao = new UsuarioDao();
         dao.criarUsuario(usuario);
