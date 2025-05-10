@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/cadastro")
+@WebServlet("/registro")
 public class CadastroServlet extends HttpServlet {
 
     @Override

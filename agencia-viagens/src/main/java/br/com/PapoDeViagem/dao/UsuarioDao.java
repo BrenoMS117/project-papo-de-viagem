@@ -11,14 +11,21 @@ public class UsuarioDao {
 
     public void criarUsuario(Usuario usuario){
 
-        String SQLCriar = "CREATE TABLE IF NOT EXISTS USUARIO ( NOME VARCHAR(100), EMAIL VARCHAR(100), SENHA VARCHAR(100), DATA_NASCIMENTO VARCHAR(10), CPF VARCHAR(110), ADM BOOLEAN)";
+        String SQLCriar = "CREATE TABLE IF NOT EXISTS USUARIO ( ID INT AUTO_INCREMENT PRIMARY KEY, NOME VARCHAR(100), EMAIL VARCHAR(100), SENHA VARCHAR(100), DATA_NASCIMENTO VARCHAR(10), CPF VARCHAR(110), ADM BOOLEAN)";
 
         String SQL = "INSERT INTO USUARIO (NOME, EMAIL, SENHA, DATA_NASCIMENTO, CPF, ADM) VALUES (?, ?, ?, ?, ?, ?)";
-        String adm = "INSERT INTO USUARIO (NOME, EMAIL, SENHA, DATA_NASCIMENTO, CPF, ADM) VALUES ('Breno', 'brenoadm@gmail.com', 'admin', '06/11/2004', '12345678910', TRUE)";
+
+        String BuscarAdm = "SELECT * FROM USUARIO WHERE EMAIL = 'adm@gmail.com'";
+
+
+        String adm = "INSERT INTO USUARIO (NOME, EMAIL, SENHA, DATA_NASCIMENTO, CPF, ADM) VALUES ('ADM', 'adm@gmail.com', 'admin', '06/11/2004', '12345678910', TRUE)";
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
             connection.prepareStatement(SQLCriar).execute();
-            connection.prepareStatement(adm).execute();
+
+            if(!connection.prepareStatement(BuscarAdm).execute()){
+                connection.prepareStatement(adm).execute();
+            }
 
             System.out.println("success in database connection");
 

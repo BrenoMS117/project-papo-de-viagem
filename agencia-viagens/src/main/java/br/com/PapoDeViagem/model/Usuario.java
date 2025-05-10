@@ -1,12 +1,17 @@
 package br.com.PapoDeViagem.model;
 
 public class Usuario {
+    private int id;
     private String nome;
     private String email;
     private String senha;
     private String data_nascimento;
     private String cpf;
     private boolean adm;
+
+    public int getId() {
+        return id;
+    }
 
     public String getNome(){
         return nome;
@@ -29,6 +34,10 @@ public class Usuario {
     }
 
     public boolean getAdm() { return adm; }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public void setNome(String nome){
         this.nome = nome;
