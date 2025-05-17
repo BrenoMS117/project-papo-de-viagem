@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+  }
+
+  .melhor-madrid {
+    padding: 16px;
+    margin: 15px;
+    text-align: center;
+  }
+
+  .prop{
+    margin: 45px;
+    margin-left: 85px;
+    text-align: left;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 16px;
+  }
+  .card {
+    max-width: 387px;
+    max-height: 365px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+
+  }
+  .card img {
+    width: 100%;
+    height: 258px;
+    object-fit: cover;
+  }
+
+  .card  h4 {
+    font-size: 15px;
+    color: #726E6E;
+    margin-left: 17px;
+    padding: 10px;
+  }
+  .card p {
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 17px;
+  }
+  
+  /* Pacotes turísticos */
+  .pacotes-turisticos {
+    margin: 10px;
+    padding: 32px;
+    
+
+  }
+  .pacotes {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+  .lista-pacotes {
+    flex: 2;
+  }
+  .pacote {
+    width: 700px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 15px;
+    display: flex;
+    
+    
+  }
+  .preco {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+    font-weight: bold;
+    
+  }
+
+  .txt-pacote{
+    flex: 1;
+  }
+  
+  .pacote button{
+    width: 128px;
+    height: 23px;
+    border-radius: 20px;
+    background-color: #3CB1D7;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+
+  }
+
+  .resumo-pacote {
+    width: 399px ;
+    height: 626px ;
+    padding: 20px;
+    border-radius: 16px;
+    margin-right: 60px;
+    border: 1px solid #ccc;
+  }
+
+  .resumo-pacote h4{
+    margin: 10px;
+    font-size: 25px;
+  }
+  .container-datas{
+    display: flex;
+    width: 367px;
+    height: 109px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 9px;
+    margin: 20px 0;
+    
+  }
+
+  .datas{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 10px;
+  }
+
+  .datas img{
+    width: 37px;
+    height: 27px;
+  }
+
+  .txt-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .txt-data p{
+    margin-bottom: 7px;
+  }
+
+  .pessoas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+
+  .txt-pessoas{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  select {
+    flex: 1;
+    width: 67px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 15px;
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+  .btn {
+    background: #31B8E0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .info-antes {
+    background-color: #fff;
+    padding: 32px;
+  }
+
+  .container-info{
+    display: flex;
+  }
+
+  .info-item {
+    background-color: #F3BC93;
+    padding: 10px;
+    width: 240px;
+    height: 65px;
+    gap: 10px;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .txt-info{
+    width: 800px;
+    height: 65px;
+    padding: 10px;
+    margin: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icone {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+
+  .container-btn{
+    margin: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-azul {
+    width: 454px;
+    height: 38px;
+    margin-top: 16;
+    padding: 8px 16;
+    background-color: #3CB1D7;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero h1 {
+      font-size: 19.2px;
+    }
+  
+    .hero h2 {
+      font-size: 12px;
+    }
+  }
