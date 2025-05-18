@@ -11,48 +11,6 @@ body {
     color: #333;
 }
 
-
-.top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-}
-
-.logo{
-    font-size: 24px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-}
-
-.logo img{
-    max-width: 100%;
-    height: auto;
-}
-
-.menu button {
-    
-    border: 1px solid #A0B8D9;
-    padding: 8px 20px;
-    margin-left: 10px;
-    border-radius: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.login {
-    color: #333;
-    background-color: white;
-}
-
-.registro {
-    background-color: #A0B8D9;
-    color: #333;
-    border: none;
-}
-
 .menu button:hover {
     opacity: 0.8;
 }

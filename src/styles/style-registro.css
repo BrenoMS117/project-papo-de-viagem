@@ -13,40 +13,8 @@
             min-height: 100vh;
         }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            
-        }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
 
-        .login-registro button {
-            width: 100px;
-            height: 26px;
-            margin-top: 20px;
-            margin-left: 30px;
-            padding: 5px 15px;
-            border: 2px solid #88A9C1;
-            border-radius: 9px;
-            background-color: white;
-            color: #000;
-            cursor: pointer;
-        }
-
-        .login-registro .login{
-            background-color: #88A9C1;
-            color: white;
-        }
-
- 
         .container-main {
             flex: 1;
             display: flex;

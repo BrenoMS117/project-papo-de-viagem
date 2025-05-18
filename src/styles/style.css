@@ -9,115 +9,23 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-.background-container {
-    position: relative;
+.header1{
+    height: 733px;
     width: 100%;
-    height: 100vh;
-    background-image: url('img/mohammad-alizade-CDu0x1Aiils-unsplash\ 1@2x.png'); /* Substitua pelo nome do seu arquivo de imagem */
+    background: url(/src/img/mohammad-alizade-CDu0x1Aiils-unsplash\ 1@2x.png) no-repeat center
+      center;
     background-size: cover;
-    background-position: center;
-}
+  }
 
-.content {
-    position: relative;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
+  .search{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    color: white;
-}
-
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    max-width: 1200px;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    width: 20%; /* Reserva espaço fixo para o logo */
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.logo h3{
-    margin-top: 10px;
-}
-.menu {
-    display: flex;
-    gap: 30px; /* Aumentei o espaçamento entre os itens */
-    width: 60%; /* Define um espaço fixo para o menu */
-    justify-content: center; /* Centraliza os itens do menu horizontalmente */
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px; /* Adicionei padding aos links */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-.menu a:hover {
-    color: #333;
-}
-
-.profile {
-    width: 150px; /* Largura do botão */
-    height: 40px; /* Altura do botão */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 20px; /* Bordas levemente arredondadas */
-    border: 1px solid white; /* Linha branca contornando o botão */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; /* Cor do texto */
-    font-family: 'Poppins', sans-serif;
-    margin-left: auto; /* Empurra o perfil para a direita */
-    cursor: pointer; /* Mostra que o botão é clicável */
-    transition: background-color 0.3s, color 0.3s; /* Transição suave */
-}
-
-.profile:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra branca */
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 800px;
-    margin-top: 60px;
-    gap: 30px;
-}
-
-.title {
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    margin-top: 40px;
-}
-
-.description {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-}
+    gap: 160px;
+  }
 
 .search-box {
+    
     width: 100%;
     max-width: 500px;
     margin-bottom: 30px;
@@ -138,7 +46,7 @@ body {
 
 .buttons {
     display: flex;
-    gap: 20px;
+    gap: 70px;
 }
 
 .btn {
@@ -466,20 +374,6 @@ body {
         gap: 20px;
     }
 }
-
-.rodape-terravista {
-    background-color: transparent;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.imagem-rodape {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 /* Estilo para telas menores */
 @media (max-width: 768px) {
     .imagem-rodape {

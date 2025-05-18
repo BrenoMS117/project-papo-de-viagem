@@ -1,155 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TerraVista</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/header-footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-</head>
-<body>
-    <!-- Seção com imagem de fundo -->
-    <div class="background-container">
-        <div class="overlay"></div>
-        <div class="content">
-            <header class="header">
-                <div class="logo">
-                    <img src="img/Mountain.png">
-                    <h3>TerraVista</h3>
-                </div>
-                <nav class="menu">
-                    <a href="#">Home</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Destinos</a>
-                    <a href="#">Contato</a>
-                </nav>
-                <div class="profile">
-                    <p>nomeUsuario</p>
-                    <img src="img/Menu.png">
-                </div>
-            </header>
-
-            <div class="main-content">
-                <div class="text-content">
-                    <h1 class="title">DESCUBRA SUA PRÓXIMA<br>AVENTURA</h1>
-                    <p class="description">Explore novos lugares e mergulhe em experiências inesquecíveis!</p>
-                </div>
-
-                <div class="search-box">
-                    <input type="text" placeholder="Pesquise Aqui">
-                </div>
-
-                <div class="buttons">
-                    <button class="btn">Comida</button>
-                    <button class="btn">Turismo</button>
-                    <button class="btn">Aventura</button>
-                </div>
-            </div>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header1">
+      <header class="top-header">
+        <div class="logo">
+          <img
+            src="/src/img/mountain black 1.png"
+            alt="TerraVista Logo"
+          />TerraVista
+        </div>
+        <nav>
+          <a href="#">Sobre</a>
+          <a href="#">Destinos</a>
+          <a href="#">Contato</a>
+        </nav>
+        <div class="auth-buttons">
+          <button class="registro">Registrar</button>
+          <button class="login">Login</button>
+        </div>
+      </header>
+      <section class="banner">
+        <h1>Descubra sua próxima aventura</h1>
+        <h2>Conheça novos lugares e novas experiências , vivendo</h2>
+    </section>
+    <div class="search">
+        <div class="search-box">
+            <input type="text" placeholder="Pesquise Aqui" />
+        </div>
+        <div class="buttons">
+            <button class="btn">Comida</button>
+            <button class="btn">Turismo</button>
+            <button class="btn">Aventura</button>
+      </div>
         </div>
     </div>
 
     <!-- Novo conteúdo abaixo da imagem -->
     <div class="content-below">
-        <div class="content-below-inner">
-            <h2>O MELHOR DO JAPÃO</h2>
-            <p>A  melhor tradição e comodidade que uma única viagem poderia proporcionar!
-        </div>
+      <div class="content-below-inner">
+        <h2>O MELHOR DO JAPÃO</h2>
+        <p>
+          A melhor tradição e comodidade que uma única viagem poderia
+          proporcionar!
+        </p>
+      </div>
     </div>
     <section class="travel-container">
-        <div class="travel-card">
-            <img src="img/Ryokans 1.png" alt="Destino 1" class="travel-image">
-            <div class="travel-text">
-                <h3>Tokyo, Japão</h3>
-                <p>Hospedagens exclusiva , com os tradicionais Ryokans</p>
-            </div>
+      <div class="travel-card">
+        <img src="/src/img/Ryokans 1.png" alt="Destino 1" class="travel-image" />
+        <div class="travel-text">
+          <h3>Tokyo, Japão</h3>
+          <p>Hospedagens exclusiva , com os tradicionais Ryokans</p>
         </div>
+      </div>
 
-        <div class="travel-card">
-            <img src="img/pexels-valeriya-28701155 1.png" alt="Destino 2" class="travel-image">
-            <div class="travel-text">
-                <h3>Tokyo, Japão</h3>
-                <p>Degustação de pratos típicos em mercados locais e restaurantes renomados.</p>
-            </div>
+      <div class="travel-card">
+        <img
+          src="/src/img/pexels-valeriya-28701155 1.png"
+          alt="Destino 2"
+          class="travel-image"
+        />
+        <div class="travel-text">
+          <h3>Tokyo, Japão</h3>
+          <p>
+            Degustação de pratos típicos em mercados locais e restaurantes
+            renomados.
+          </p>
         </div>
+      </div>
 
-        <div class="travel-card">
-            <img src="img/pexels-charmaine-3456324-5182103 1.png" alt="Destino 3" class="travel-image">
-            <div class="travel-text">
-                <h3>Tokyo, Japão</h3>
-                <p>A cidade onde se mantém de dia mesmo após o anoitecer</p>
-            </div>
+      <div class="travel-card">
+        <img
+          src="/src/img/pexels-charmaine-3456324-5182103 1.png"
+          alt="Destino 3"
+          class="travel-image"
+        />
+        <div class="travel-text">
+          <h3>Tokyo, Japão</h3>
+          <p>A cidade onde se mantém de dia mesmo após o anoitecer</p>
         </div>
+      </div>
     </section>
     <div class="sobre-nos">
-        <div class="sobre-nos-title">
-            <h3>Sobre TerraVista: Conectando você ao mundo.</h3>
+      <div class="sobre-nos-title">
+        <h3>Sobre TerraVista: Conectando você ao mundo.</h3>
+      </div>
+      <div class="sobre-nos-container">
+        <div class="sobre-nos-texto">
+          <p>
+            Na TerraVista, acreditamos que cada viagem é uma oportunidade para
+            descobrir novos horizontes, criar memórias inesquecíveis e
+            conectar-se com o mundo de uma maneira única. Somos mais do que uma
+            agência de viagens; somos seus parceiros na jornada de explorar o
+            desconhecido e transformar sonhos em realidade.<br /><br />
+            Fundada em 2025, a TerraVista nasceu da paixão por viagens e da
+            vontade de oferecer experiências que vão além do comum. Tudo começou
+            com uma pequena equipe de entusiastas por aventuras, que decidiram
+            unir suas expertises para criar uma agência que prioriza a
+            personalização, o conforto e a autenticidade. Hoje, somos uma
+            referência no mercado de viagens, com milhares de clientes
+            satisfeitos e roteiros que abrangem os destinos mais incríveis do
+            planeta.
+          </p>
         </div>
-        <div class="sobre-nos-container">
-            <div class="sobre-nos-texto">
-                <p>Na TerraVista, acreditamos que cada viagem é uma oportunidade para descobrir novos horizontes, criar memórias inesquecíveis e conectar-se com o mundo de uma maneira única. Somos mais do que uma agência de viagens; somos seus parceiros na jornada de explorar o desconhecido e transformar sonhos em realidade.<br><br>
-                Fundada em 2025, a TerraVista nasceu da paixão por viagens e da vontade de oferecer experiências que vão além do comum. Tudo começou com uma pequena equipe de entusiastas por aventuras, que decidiram unir suas expertises para criar uma agência que prioriza a personalização, o conforto e a autenticidade.
-                Hoje, somos uma referência no mercado de viagens, com milhares de clientes satisfeitos e roteiros que abrangem os destinos mais incríveis do planeta.</p>
-            </div>
-            <img src="img/Traveler reading a book.png" class="sobre-nos-imagem" alt="Viajante lendo livro">  
-        </div>
+        <img
+          src="/src/img/Traveler reading a book.png"
+          class="sobre-nos-imagem"
+          alt="Viajante lendo livro"
+        />
+      </div>
     </div>
     <div class="container-destinos-populares">
-        <h2 class="titulo-destinos-populares">Destinos mais buscados:</h2>
-        
-        <div class="lista-cards-destinos">
-            <!-- Card 1 -->
-            <div class="card-destino-popular">
-                <img src="img/pexels-leonardo-de-jesus-couto-2148720799-30299891 1.png" alt="Amazônia" class="imagem-card-destino">
-                <div class="conteudo-card-destino">
-                    <h3 class="nome-destino-card">Amazônia, Brasil</h3>
-                    <p class="descricao-card-destino">
-                        Imagine adentrar a maior floresta tropical do planeta, onde a natureza reina soberana e cada passo revela uma nova surpresa.
-                    </p>
-                    <a href="#" class="botao-conhecer-destino">Conhecer</a>
-                </div>
-            </div>
-            
-            <!-- Card 2 -->
-            <div class="card-destino-popular">
-                <img src="img/pexels-ugur-kahraman-1765266160-30297648 1.png" alt="Capadócia" class="imagem-card-destino">
-                <div class="conteudo-card-destino">
-                    <h3 class="nome-destino-card">Capadócia, Turquia</h3>
-                    <p class="descricao-card-destino">
-                        Imagine sobrevoar de balão vales repletos de formações rochosas esculpidas pelo tempo.
-                    </p>
-                    <a href="#" class="botao-conhecer-destino">Conhecer</a>
-                </div>
-            </div>
-            
-            <!-- Card 3 -->
-            <div class="card-destino-popular">
-                <img src="img/pexels-yajun-dong-50968307-28194487 1.png" alt="Canadá" class="imagem-card-destino">
-                <div class="conteudo-card-destino">
-                    <h3 class="nome-destino-card">Província Ontário , Canadá</h3>
-                    <p class="descricao-card-destino">
-                        Ontário é um destino que combina o charme das cidades vibrantes com a serenidade da natureza.
-                    </p>
-                    <a href="#" class="botao-conhecer-destino">Conhecer</a>
-                </div>
-            </div>
-        </div>  
+      <h2 class="titulo-destinos-populares">Destinos mais buscados:</h2>
+
+      <div class="lista-cards-destinos">
+        <!-- Card 1 -->
+        <div class="card-destino-popular">
+          <img
+            src="/src/img/amazonas.png"
+            alt="Amazônia"
+            class="imagem-card-destino"
+          />
+          <div class="conteudo-card-destino">
+            <h3 class="nome-destino-card">Amazônia, Brasil</h3>
+            <p class="descricao-card-destino">
+              Imagine adentrar a maior floresta tropical do planeta, onde a
+              natureza reina soberana e cada passo revela uma nova surpresa.
+            </p>
+            <a href="#" class="botao-conhecer-destino">Conhecer</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-destino-popular">
+          <img
+            src="/src/img/capadocia.png"
+            alt="Capadócia"
+            class="imagem-card-destino"
+          />
+          <div class="conteudo-card-destino">
+            <h3 class="nome-destino-card">Capadócia, Turquia</h3>
+            <p class="descricao-card-destino">
+              Imagine sobrevoar de balão vales repletos de formações rochosas
+              esculpidas pelo tempo.
+            </p>
+            <a href="#" class="botao-conhecer-destino">Conhecer</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-destino-popular">
+          <img
+            src="/src/img/ontario.png"
+            alt="Canadá"
+            class="imagem-card-destino"
+          />
+          <div class="conteudo-card-destino">
+            <h3 class="nome-destino-card">Província Ontário , Canadá</h3>
+            <p class="descricao-card-destino">
+              Ontário é um destino que combina o charme das cidades vibrantes
+              com a serenidade da natureza.
+            </p>
+            <a href="#" class="botao-conhecer-destino">Conhecer</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <footer class="rodape-terravista">
-        <img src="img/rodape.png" alt="Rodapé" class="imagem-rodape">
-    </footer>
-</body>
-
+  <footer class="footer">
+    <div class="footer-elementos">
+        <div class="footer-esquerda">
+            <div class="logo">
+                <img src="/src/img/Mountain.png" alt="TerraVista Logo">TerraVista
+            </div>
+            <p>A PAZ QUE SÓ A VIAGEM TRAZ</p>
+            <div class="social-icons">
+                <img src="/src/img/Instagram.png" alt="Instagram">
+                <img src="/src/img/WhatsApp.png" alt="WhatsApp">
+                <img src="/src/img/LinkedIn.png" alt="LinkedIn">
+            </div>
+        </div>
+        <div class="footer-meio">
+            <ul>
+                <li>BRASIL</li>
+                <li>ESPANHA</li>
+                <li>TURQUIA</li>
+                <li>CANADÁ</li>
+                <li>PERU</li>
+                <li>INDONÉSIA</li>
+            </ul>
+        </div>
+        <div class="footer-images">
+            <img src="/src/img/imageCadastro-sem fundo (1) 1.png" alt="Imagem Viajante">
+        </div>
+    </div>
+    <p class="copyright">&copy; COPYRIGHT TERRAVISTA 2025</p>
+</footer>
+  </body>
 </html>
