@@ -2,8 +2,6 @@ package br.com.PapoDeViagem.dao;
 
 import br.com.PapoDeViagem.model.Login;
 import br.com.PapoDeViagem.model.Usuario;
-import br.com.PapoDeViagem.model.Viagem;
-
 
 import java.sql.*;
 
@@ -17,17 +15,22 @@ public class UsuarioDao {
 
         String BuscarAdm = "SELECT * FROM USUARIO WHERE EMAIL = 'adm@gmail.com'";
 
-
         String adm = "INSERT INTO USUARIO (NOME, EMAIL, SENHA, DATA_NASCIMENTO, CPF, ADM) VALUES ('ADM', 'adm@gmail.com', 'admin', '06/11/2004', '12345678910', TRUE)";
+
+        ViagemDao viagemDao = new ViagemDao();
+        viagemDao.criarTabelaViagem();
+        SuasViagensDao svDao = new SuasViagensDao();
+        svDao.criarTabelaSuasViagens();
+
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
             connection.prepareStatement(SQLCriar).execute();
 
-            if(!connection.prepareStatement(BuscarAdm).execute()){
+            PreparedStatement checkAdm = connection.prepareStatement(BuscarAdm);
+            ResultSet result = checkAdm.executeQuery();
+            if (!result.next()) {
                 connection.prepareStatement(adm).execute();
             }
-
-            System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
