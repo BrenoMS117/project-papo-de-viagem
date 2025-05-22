@@ -20,7 +20,7 @@ public class SuasViagensDao {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
             connection.prepareStatement(SQLCriar).execute();
             connection.close();
-            System.out.println("Tabela SUAS_VIAGENS criada com sucesso!");
+            System.out.println("Tabela Suas-Viagens criada com sucesso!");
         } catch (Exception e) {
             System.out.println("Erro ao criar tabela SUAS_VIAGENS: " + e.getMessage());
         }

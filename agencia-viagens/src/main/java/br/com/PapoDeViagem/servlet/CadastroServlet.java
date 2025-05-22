@@ -33,5 +33,6 @@ public class CadastroServlet extends HttpServlet {
         UsuarioDao dao = new UsuarioDao();
         dao.criarUsuario(usuario);
 
+        response.sendRedirect("login.jsp");
     }
 }

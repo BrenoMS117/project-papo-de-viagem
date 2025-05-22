@@ -13,12 +13,13 @@ public class ViagemDao {
                 "ID INT AUTO_INCREMENT PRIMARY KEY, " +
                 "NOME VARCHAR(100), " +
                 "DATA VARCHAR(10), " +
-                "PRECO DOUBLE, " +
-                "DESCRICAO VARCHAR(255))";
+                "PRECO DECIMAL(10,2), " +
+                "DESCRICAO VARCHAR(255), " +
+                "IMAGEM VARCHAR(255))";
 
         try (Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa")) {
             connection.prepareStatement(SQLCriar).execute();
-            System.out.println("Tabela VIAGEM criada com sucesso!");
+            System.out.println("Tabela Viagem criada com sucesso!");
         } catch (Exception e) {
             System.out.println("Erro ao criar tabela VIAGEM: " + e.getMessage());
         }

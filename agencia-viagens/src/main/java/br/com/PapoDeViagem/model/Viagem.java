@@ -7,6 +7,7 @@ public class Viagem {
     private String data;
     private double preco;
     private String descricao;
+    private String imagem;
 
     public int getId() {
         return id;
@@ -46,5 +47,13 @@ public class Viagem {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
 }

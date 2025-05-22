@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.*;
 import java.io.IOException;
 
 @WebServlet("/login")
@@ -30,9 +31,10 @@ public class LoginServlet extends HttpServlet {
 
 
         if (valido) {
-            resp.sendRedirect("registro.html");
+            resp.sendRedirect("/");
         } else {
-//            req.getRequestDispatcher("login.jsp").forward(req, resp);
+            req.setAttribute("erroLogin", "Usuário ou senha incorretos!");
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
         }
     }
 }
