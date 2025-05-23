@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+    width: 1260px;
+    height: auto;
+  display: flex;
+  margin-left: 300px;
+  flex: 1;
+
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-right: 1px solid #f0d5ca;
+}
+
+.sidebar h2 {
+  margin-bottom: 2rem;
+}
+
+.menu-button {
+  background-color: #E2A48E;
+  color: white;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.menu-button.conta {
+  position: relative;
+}
+
+.menu-button.conta::after {
+  content: "\25BE";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+}
+
+.viagens-salvas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.viagem-card {
+  border: 2px solid #d3d3d3;
+  border-radius: 12px;
+  padding: 16px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.viagem-card img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.illustration {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form-area {
+    flex-direction: column;
+  }
+
+  .illustration {
+    margin-top: 2rem;
+  }
+}

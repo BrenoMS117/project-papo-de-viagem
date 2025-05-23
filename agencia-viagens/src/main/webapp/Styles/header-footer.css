@@ -1,7 +1,7 @@
 .header {
     height: 500px;
     width: 100%;
-    background: url(/src/img/mohammad-alizade-saU6KBr3rZ8-unsplash\ 1.png) no-repeat center
+    background: url("/img/mohammad-alizade-saU6KBr3rZ8-unsplash\ 1.png") no-repeat center
       center;
     background-size: cover;
   }
@@ -15,6 +15,7 @@
   .top-header img {
     height: 30px;
   }
+
   .top-header nav a {
     margin: 0 10px;
     text-decoration: none;
@@ -43,6 +44,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
   }
 
   .logo img {
@@ -69,12 +71,10 @@
   }
 
 .footer {
-    background: url(/src/img/rodape.png)no-repeat center top;
+    background: url("/img/rodape.png") no-repeat center top;
     background-size: cover;
     color: #fff;
 }
-
-
 
 .footer-elementos {
 

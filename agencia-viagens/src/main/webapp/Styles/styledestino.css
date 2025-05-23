@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.container-pesquisa {
+  margin-top: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pesquisa {
+  width: 1120px;
+  height: 78px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  border: 1px solid #ccc;
+}
+.pesquisa input {
+  width: 344.53px;
+  height: 39.33px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+.destinos {
+  margin-top: 50px;
+  padding: 40px 5%;
+}
+.destinos h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.card .info {
+  padding: 10px;
+}
+.card .info h4 {
+  font-size: 14px;
+  color: #666;
+}
+.card .info p {
+  font-size: 13px;
+  margin: 8px 0;
+}
+.card .info .price-reserve {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .info .price-reserve button {
+  background-color: #8aa3c1;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}

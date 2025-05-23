@@ -21,8 +21,6 @@ public class AppInitializer implements ServletContextListener {
         viagemDao.criarTabelaViagem();
         SuasViagensDao svDao = new SuasViagensDao();
         svDao.criarTabelaSuasViagens();
-
-
     }
 
     @Override

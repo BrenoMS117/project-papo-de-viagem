@@ -1,3 +1,10 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.util.List" %>
+<%@ page import="br.com.PapoDeViagem.model.Viagem" %>
+
+<%
+    List<Viagem> viagens = (List<Viagem>) request.getAttribute("viagens");
+%>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,20 +18,14 @@
 <body>
 <div class="header">
     <header class="top-header">
-        <div class="logo">
+        <div class="logo" onclick="window.location.href='/';">
             <img src="img/mountain black 1.png" alt="TerraVista Logo">TerraVista
         </div>
-        <nav>
-            <a href="#">Sobre</a>
-            <a href="#">Destinos</a>
-            <a href="#">Contato</a>
-        </nav>
         <div class="auth-buttons">
-            <button class="registro">Registrar</button>
-            <button class="login">Login</button>
+            <button class="registro" onclick="window.location.href='registro.html';">Registrar</button>
+            <button class="login" onclick="window.location.href='login.jsp';">Login</button>
         </div>
     </header>
-
     <section class="banner">
         <h2>Busque a nova viagem</h2>
         <h1>CONHECENDO NOVOS HORIZONTES</h1>
@@ -40,138 +41,21 @@
 <section class="destinos">
     <h3>Conhecer Novos Destinos</h3>
     <div class="grid">
-        <div class="card">
-            <img src="img/madrid.png" alt="">
-            <div class="info">
-                <h4>Madrid, Espanha</h4>
-                <p>Madrid é muito mais do que a capital da Espanha, é uma cidade que respira história e arte.</p>
-                <div class="price-reserve">
-                    <span>R$ 1.500</span>
-                    <button>Reservar</button>
+        <% for (Viagem viagem : viagens) { %>
+            <div class="card">
+                <img src="img/<%= viagem.getImagem() %>" alt="">
+                <div class="info">
+                    <h4><%= viagem.getNome() %></h4>
+                    <p><%= viagem.getDescricao() %></p>
+                    <div class="price-reserve">
+                        <span>R$ <%= String.format("%.2f", viagem.getPreco()) %></span>
+                        <a href="compra.jsp?id=<%= viagem.getId() %>">
+                            <button class="btn">Reservar</button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="img/paris.png" alt="">
-            <div class="info">
-                <h4>Paris, França</h4>
-                <p>Conhecida como a "Cidade Luz", Paris é famosa por sua arquitetura icônica, e atmosfera romântica.</p>
-                <div class="price-reserve">
-                    <span>R$ 2.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/cancun.png" alt="">
-            <div class="info">
-                <h4>Cancun, México</h4>
-                <p>Praias deslumbrantes, resorts all-inclusive e uma vida noturna animada.</p>
-                <div class="price-reserve">
-                    <span>R$ 4.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/ball.png" alt="">
-            <div class="info">
-                <h4>Bali, Indonésia</h4>
-                <p>Praias paradisíacas, templos impressionantes e uma cultura rica e espiritual.</p>
-                <div class="price-reserve">
-                    <span>R$ 3.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/Nova York.png" alt="">
-            <div class="info">
-                <h4>Nova York, EUA</h4>
-                <p>Uma das cidades mais vibrantes do mundo, com atrações como Central Park, Broadway e a Estátua da Liberdade.</p>
-                <div class="price-reserve">
-                    <span>R$ 3.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/cape_town.png" alt="">
-            <div class="info">
-                <h4>Cape Town, África do Sul</h4>
-                <p>Beleza natural impressionante, com destaque para a Table Mountain e vinícolas renomadas.</p>
-                <div class="price-reserve">
-                    <span>R$ 3.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/toquio.png" alt="">
-            <div class="info">
-                <h4>Tóquio, Japão</h4>
-                <p>Uma mistura única de tradição e modernidade, com templos antigos, tecnologia avançada e gastronomia incrível.</p>
-                <div class="price-reserve">
-                    <span>R$ 3.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/machu_pichu.png" alt="">
-            <div class="info">
-                <h4>Machu Pichu, Peru</h4>
-                <p>Uma das maravilhas do mundo, com ruínas incas impressionantes e paisagens deslumbrantes.</p>
-                <div class="price-reserve">
-                    <span>R$ 3.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/roma.png" alt="">
-            <div class="info">
-                <h4>Roma, Itália</h4>
-                <p>História viva, com o Coliseu, o Vaticano e uma gastronomia inesquecível.</p>
-                <div class="price-reserve">
-                    <span>R$ 3.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/amazonas.png" alt="">
-            <div class="info">
-                <h4>Amazonas, Brasil</h4>
-                <p>Imagine adentrar a maior floresta tropical do planeta, onde a natureza reina soberana e cada passo revela uma nova surpresa</p>
-                <div class="price-reserve">
-                    <span>R$ 3.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/capadocia.png" alt="">
-            <div class="info">
-                <h4>Capadócia, Turquia</h4>
-                <p>Imagine sobrevoar de balão vales repletos de formações rochosas esculpidas pelo tempo.</p>
-                <div class="price-reserve">
-                    <span>R$ 3.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/ontario.png" alt="">
-            <div class="info">
-                <h4>Província Ontário , Canadá</h4>
-                <p>Ontário é um destino que combina o charme das cidades vibrantes com a serenidade da natureza.</p>
-                <div class="price-reserve">
-                    <span>R$ 3.000</span>
-                    <button>Reservar</button>
-                </div>
-            </div>
-        </div>
+        <% } %>
     </div>
 </section>
 

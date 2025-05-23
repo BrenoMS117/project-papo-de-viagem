@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - TerraVista</title>
-    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="Styles/style-login.css">
+    <link rel="stylesheet" href="Styles/header-footer.css">
 </head>
 <body>
     <header class="top-header">
-        <div class="logo">
-        <img src="img/mountain black 1.png" alt="TerraVista Logo">TerraVista
+        <div class="logo" onclick="window.location.href='/';">
+        <img src="/img/mountain black 1.png" alt="TerraVista Logo">TerraVista
         </div>
     </header>
 
@@ -37,34 +38,34 @@
             <img src="img/imageCadastro 1.png" alt="Viagem" class="image">
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-elementos">
-            <div class="footer-esquerda">
-                <div class="logo">
-                    <img src="img/Mountain.png" alt="TerraVista Logo">TerraVista
-                </div>
-                <p>A PAZ QUE SÓ A VIAGEM TRAZ</p>
-                <div class="social-icons">
-                    <img src="img/Instagram.png" alt="Instagram">
-                    <img src="img/WhatsApp.png" alt="WhatsApp">
-                    <img src="img/LinkedIn.png" alt="LinkedIn">
-                </div>
+<footer class="footer">
+    <div class="footer-elementos">
+        <div class="footer-esquerda">
+            <div class="logo">
+                <img src="img/Mountain.png" alt="TerraVista Logo">TerraVista
             </div>
-            <div class="footer-direita">
-                <ul>
-                    <li>BRASIL</li>
-                    <li>ESPANHA</li>
-                    <li>TURQUIA</li>
-                    <li>CANADÁ</li>
-                    <li>PERU</li>
-                    <li>INDONÉSIA</li>
-                </ul>
-            </div>
-            <div class="footer-images">
-                <img src="img/imageCadastro-sem fundo (1) 1.png" alt="Imagem Viajante">
+            <p>A PAZ QUE SÓ A VIAGEM TRAZ</p>
+            <div class="social-icons">
+                <img src="img/Instagram.png" alt="Instagram">
+                <img src="img/WhatsApp.png" alt="WhatsApp">
+                <img src="img/LinkedIn.png" alt="LinkedIn">
             </div>
         </div>
-        <p class="copyright">&copy; COPYRIGHT TERRAVISTA 2025</p>
-    </footer>
+        <div class="footer-meio">
+            <ul>
+                <li>BRASIL</li>
+                <li>ESPANHA</li>
+                <li>TURQUIA</li>
+                <li>CANADÁ</li>
+                <li>PERU</li>
+                <li>INDONÉSIA</li>
+            </ul>
+        </div>
+        <div class="footer-images">
+            <img src="img/imageCadastro-sem fundo (1) 1.png" alt="Imagem Viajante">
+        </div>
+    </div>
+    <p class="copyright">&copy; COPYRIGHT TERRAVISTA 2025</p>
+</footer>
 </body>
 </html>

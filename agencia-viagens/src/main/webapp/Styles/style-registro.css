@@ -1,191 +1,192 @@
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
-        body {
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+body {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            
-        }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
+}
 
-        .login-registro button {
-            width: 100px;
-            height: 26px;
-            margin-top: 20px;
-            margin-left: 30px;
-            padding: 5px 15px;
-            border: 2px solid #88A9C1;
-            border-radius: 9px;
-            background-color: white;
-            color: #000;
-            cursor: pointer;
-        }
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 
-        .login-registro .login{
-            background-color: #88A9C1;
-            color: white;
-        }
+.login-registro button {
+    width: 100px;
+    height: 26px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 5px 15px;
+    border: 2px solid #88A9C1;
+    border-radius: 9px;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
 
- 
-        .container-main {
-            flex: 1;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            margin: 40px;
-        }
-        
-        main h1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            color: #6699cc;
-            text-align: center;
-            
-        }
+.login-registro .login{
+    background-color: #88A9C1;
+    color: white;
+}
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            max-width: 1200px;
-            width: 100%;
-        }
 
-        .formulario {
-            flex: 1 1 400px;
-            padding: 20px;
-        }
+.container-main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 40px;
+}
 
-      
-        .formulario form {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: left;
-        }
+main h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #6699cc;
+    text-align: center;
 
-        .formulario input {
-            width: 100%;
-            padding: 10px;
-            border: 2px solid #aac6de;
-            border-radius: 9px;
-        }
+}
 
-        .formulario .campo-menor {
-            width: 47%;
-           
-        }
-        .formulario .Email{
-            width: 90%;
-        }
-        .formulario .usuario{
-            width: 90%;
-        }
-        .formulario .senha{
-            width: 75%;
-        }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
 
-        .minimo {
-            width: 100%;
-            font-size: 12px;
-            color: #666;
-        }
+.formulario {
+    flex: 1 1 400px;
+    padding: 20px;
+}
 
-        .Registrar {
-            width: 75%;
-            padding: 12px;
-            background-color: #aac6de;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-        }
 
-        .image {
-            flex: 1 1 400px;
-            padding: 20px;
-            text-align: left;
-            margin: 40px;
-        }
+.formulario form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: left;
+}
 
-        .image img {
-            max-width: 100%;
-            height: auto;
-        }
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #aac6de;
+    border-radius: 9px;
+}
 
-        .image p{
-            margin-top: 10px;
-            font-size: 14px;
-            margin-left: 30px;
-            
-        }
+.formulario .campo-menor {
+    width: 47%;
 
-        .image button{
-            width: 100px;
-            height: 26px;
-            margin-top: 20px;
-            margin-left: 30px;
-            padding: 5px 15px;
-            border: 2px solid #88A9C1;
-            border-radius: 9px;
-            background-color: white;
-            color: #000;
-            cursor: pointer;
-        }
+}
+.formulario .Email{
+    width: 90%;
+}
+.formulario .usuario{
+    width: 90%;
+}
+.formulario .senha{
+    width: 75%;
+}
 
-        .container-footer{
-            display: flex;         
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-        }
+.minimo {
+    width: 100%;
+    font-size: 12px;
+    color: #666;
+}
 
-        .container-footer img{
-            max-width: 100%;
-            height: auto;
-        }
+.Registrar {
+    width: 75%;
+    padding: 12px;
+    background-color: #aac6de;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
-        .linha{
-            width: 1000px;
-            height: 2px;
-            background: black;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            font-size: 12px;
-            
-        }
+.image {
+    flex: 1 1 400px;
+    padding: 20px;
+    text-align: left;
+    margin: 40px;
+}
 
-        @media (max-width: 768px) {
-            .formulario .campo-menor {
-                width: 100%;
-            }
-        }
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image p{
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 30px;
+
+}
+
+.image button{
+    width: 100px;
+    height: 26px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 5px 15px;
+    border: 2px solid #88A9C1;
+    border-radius: 9px;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-footer img{
+    max-width: 100%;
+    height: auto;
+}
+
+.linha{
+    width: 1000px;
+    height: 2px;
+    background: black;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+
+}
+
+@media (max-width: 768px) {
+    .formulario .campo-menor {
+        width: 100%;
+    }
+}
