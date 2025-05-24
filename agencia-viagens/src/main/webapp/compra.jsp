@@ -55,7 +55,6 @@
         </div>
 
         <div class="resumo-pacote">
-            <h4>R$<%= String.format("%.2f", viagem.getPreco()) %> <small>/pessoa</small></h4>
             <div class="container-datas">
                 <div class="datas">
                     <img src="img/Calendar.png" alt="" />
@@ -70,7 +69,7 @@
                 <span>TOTAL:</span>
                 <span id="total">R$<%= String.format("%.2f", viagem.getPreco() * 3) %></span>
             </div>
-            <button class="btn">Reservar</button>
+            <button class="btn" onclick="window.location.href='viagens.html';">Reservar</button>
         </div>
 
     </div>
