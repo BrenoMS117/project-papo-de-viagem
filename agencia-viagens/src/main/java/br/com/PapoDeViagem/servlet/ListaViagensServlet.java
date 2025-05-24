@@ -19,5 +19,7 @@ public class ListaViagensServlet extends HttpServlet {
 
         req.setAttribute("viagens", viagens);
         req.getRequestDispatcher("destino.jsp").forward(req, resp);
+        req.getRequestDispatcher("viagens.html").forward(req, resp);
+        req.getRequestDispatcher("conta.html").forward(req, resp);
     }
 }

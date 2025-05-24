@@ -45,6 +45,7 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    font-family: 'MontSerrat', sans-serif;
   }
 
   .logo img {

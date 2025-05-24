@@ -17,6 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logo{
