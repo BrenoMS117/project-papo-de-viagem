@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.swing.*;
 import java.io.IOException;
 
@@ -31,7 +32,9 @@ public class LoginServlet extends HttpServlet {
 
 
         if (valido) {
-            resp.sendRedirect("/");
+            HttpSession session = req.getSession();
+            session.setAttribute("usuarioLogado", email); // ou um objeto Usuario, se preferir
+            resp.sendRedirect("/"); // ou a página principal após login
         } else {
             req.setAttribute("erroLogin", "Usuário ou senha incorretos!");
             req.getRequestDispatcher("login.jsp").forward(req, resp);

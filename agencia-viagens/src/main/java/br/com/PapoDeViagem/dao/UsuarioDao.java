@@ -16,7 +16,7 @@ public class UsuarioDao {
         String adm = "INSERT INTO USUARIO (NOME, EMAIL, SENHA, DATA_NASCIMENTO, CPF, ADM) VALUES ('ADM', 'adm@gmail.com', 'admin', '06/11/2004', '12345678910', TRUE)";
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             connection.prepareStatement(SQLCriar).execute();
 
@@ -35,13 +35,13 @@ public class UsuarioDao {
         }
     }
 
-    public void criarUsuario(Usuario usuario){
+    public void criarUsuario(Usuario usuario) {
 
         String SQL = "INSERT INTO USUARIO (NOME, EMAIL, SENHA, DATA_NASCIMENTO, CPF, ADM) VALUES (?, ?, ?, ?, ?, ?)";
         String BuscarAdm = "SELECT * FROM USUARIO";
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -62,8 +62,7 @@ public class UsuarioDao {
             connection.close();
 
         } catch (Exception e) {
-            System.out.println("fail in database connection");
-            System.out.println(e);
+            System.err.println("Erro ao criar usuário: " + e.getMessage());
         }
     }
 
@@ -99,6 +98,18 @@ public class UsuarioDao {
             return false;
         }
     }
+
+    public void deletarPorEmail(String email) {
+        String sql = "DELETE FROM USUARIO WHERE email = ?";
+        try (Connection conn = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, email);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }
 

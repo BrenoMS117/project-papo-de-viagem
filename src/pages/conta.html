@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Meu Perfil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -36,11 +36,15 @@
         <button class="menu-button">
           Viagem <span>Minhas viagens; Se reencontre</span>
         </button>
-        <button class="menu-button">
-          Explore <span>Pacotes, Hotéis, Lugares</span>
-        </button>
-        <button class="menu-button conta">Conta</button>
-        <p class="sair-texto">Sair ou deletar perfil</p>
+        <div class="menu-button">
+          <label for="conta-opcoes">Conta:</label>
+          <select id="conta-opcoes">
+            <option value="">Escolha uma opção</option>
+            <option value="logout">Sair</option>
+            <option value="delete">Deletar Conta</option>
+          </select>
+        </div>
+
       </div>
 
       <div class="main">
@@ -92,5 +96,23 @@
       </div>
       <p class="copyright">&copy; COPYRIGHT TERRAVISTA 2025</p>
     </footer>
+
+    <script>
+      document.getElementById("conta-opcoes").addEventListener("change", function () {
+        const valor = this.value;
+
+        if (valor === "logout") {
+          window.location.href = "/logout"; // Servlet de logout
+        } else if (valor === "delete") {
+          const confirmacao = confirm("Tem certeza que deseja deletar sua conta?");
+          if (confirmacao) {
+            window.location.href = "/deletar-conta"; // Servlet que lida com exclusão
+          } else {
+            this.value = ""; // volta ao padrão
+          }
+        }
+      });
+    </script>
+
   </body>
 </html>
